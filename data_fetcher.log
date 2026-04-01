@@ -536,3 +536,53 @@ Backtesting GBPUSD (AGGRESSIVE)...
 2026-04-01 15:01:58,597 [INFO] __main__: BACKTESTING USDJPY
 2026-04-01 15:01:58,597 [INFO] __main__: ======================================================================
 2026-04-01 15:01:58,621 [INFO] __main__: Loaded 773 candles
+2026-04-01 15:21:05,020 [INFO] __main__: Loading cached CSV data...
+2026-04-01 15:21:05,021 [INFO] data_fetcher: Initialized ForexDataFetcher with data_dir=data
+2026-04-01 15:21:05,028 [INFO] data_fetcher: EURUSD: Loaded 775 candles from data/EURUSD_H4.csv
+2026-04-01 15:21:05,032 [INFO] data_fetcher: GBPUSD: Loaded 776 candles from data/GBPUSD_H4.csv
+2026-04-01 15:21:05,035 [INFO] data_fetcher: USDJPY: Loaded 773 candles from data/USDJPY_H4.csv
+2026-04-01 15:21:05,036 [INFO] bot_data_pipeline: Loaded 3 pairs from cache
+2026-04-01 15:21:05,036 [INFO] __main__: Validating data...
+2026-04-01 15:21:05,037 [INFO] bot_data_pipeline: ✓ EURUSD: 775 candles valid
+2026-04-01 15:21:05,037 [INFO] bot_data_pipeline: ✓ GBPUSD: 776 candles valid
+2026-04-01 15:21:05,038 [INFO] bot_data_pipeline: ✓ USDJPY: 773 candles valid
+2026-04-01 15:21:05,038 [INFO] __main__: 
+======================================================================
+2026-04-01 15:21:05,038 [INFO] __main__: BACKTESTING EURUSD
+2026-04-01 15:21:05,038 [INFO] __main__: ======================================================================
+2026-04-01 15:21:05,063 [INFO] __main__: Loaded 775 candles
+2026-04-01 15:21:05,064 [INFO] __main__: 
+======================================================================
+2026-04-01 15:21:05,064 [INFO] __main__: BACKTESTING GBPUSD
+2026-04-01 15:21:05,065 [INFO] __main__: ======================================================================
+2026-04-01 15:21:05,088 [INFO] __main__: Loaded 776 candles
+2026-04-01 15:21:05,088 [INFO] __main__: 
+======================================================================
+2026-04-01 15:21:05,088 [INFO] __main__: BACKTESTING USDJPY
+2026-04-01 15:21:05,089 [INFO] __main__: ======================================================================
+2026-04-01 15:21:05,114 [INFO] __main__: Loaded 773 candles
+2026-04-01 15:26:59,094 [INFO] __main__: Loading cached CSV data...
+2026-04-01 15:26:59,095 [INFO] data_fetcher: Initialized ForexDataFetcher with data_dir=data
+2026-04-01 15:26:59,100 [INFO] data_fetcher: EURUSD: Loaded 775 candles from data/EURUSD_H4.csv
+2026-04-01 15:26:59,103 [INFO] data_fetcher: GBPUSD: Loaded 776 candles from data/GBPUSD_H4.csv
+2026-04-01 15:26:59,105 [INFO] data_fetcher: USDJPY: Loaded 773 candles from data/USDJPY_H4.csv
+2026-04-01 15:26:59,105 [INFO] bot_data_pipeline: Loaded 3 pairs from cache
+2026-04-01 15:26:59,105 [INFO] __main__: Validating data...
+2026-04-01 15:26:59,106 [INFO] bot_data_pipeline: ✓ EURUSD: 775 candles valid
+2026-04-01 15:26:59,107 [INFO] bot_data_pipeline: ✓ GBPUSD: 776 candles valid
+2026-04-01 15:26:59,107 [INFO] bot_data_pipeline: ✓ USDJPY: 773 candles valid
+2026-04-01 15:26:59,107 [INFO] __main__: 
+======================================================================
+2026-04-01 15:26:59,108 [INFO] __main__: BACKTESTING EURUSD
+2026-04-01 15:26:59,108 [INFO] __main__: ======================================================================
+2026-04-01 15:26:59,138 [INFO] __main__: Loaded 775 candles
+2026-04-01 15:26:59,139 [INFO] __main__: 
+======================================================================
+2026-04-01 15:26:59,139 [INFO] __main__: BACKTESTING GBPUSD
+2026-04-01 15:26:59,140 [INFO] __main__: ======================================================================
+2026-04-01 15:26:59,163 [INFO] __main__: Loaded 776 candles
+2026-04-01 15:26:59,164 [INFO] __main__: 
+======================================================================
+2026-04-01 15:26:59,164 [INFO] __main__: BACKTESTING USDJPY
+2026-04-01 15:26:59,164 [INFO] __main__: ======================================================================
+2026-04-01 15:26:59,190 [INFO] __main__: Loaded 773 candles
