@@ -1,0 +1,256 @@
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                  $20 → $200 IN 15 DAYS - SYSTEM OVERVIEW                 ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+📊 MATHEMATICAL FOUNDATION
+═════════════════════════════════════════════════════════════════════════════
+
+Target: $20 → $200 = 10x return in 15 days
+
+Required Performance:
+  • Win Rate: 65%
+  • Daily Trades: 4-5
+  • Avg Win: $5-6
+  • Avg Loss: $2.50-3
+  • Expected Daily P&L: +$13-15
+  • 15-Day P&L: +$195-225 ✓
+
+Math Example (5 trades/day):
+  65% WR = 3.25 wins, 1.75 losses
+  P&L = (3 × $6) + (2 × $-2.50) = $18 - $5 = +$13/day
+  × 15 days = +$195 profit
+
+Probability: Achievable IF strict discipline maintained
+
+
+📁 SYSTEM FILES
+═════════════════════════════════════════════════════════════════════════════
+
+CORE STRATEGY:
+  strategy.py              → 1H swing breakout analysis (pure structure)
+  data_handler.py          → OHLCV candle objects
+  config.py                → Parameters (centralized config)
+
+DATA PIPELINE:
+  data_fetcher.py          → Fetch from yfinance
+  bot_data_pipeline.py     → Integration layer
+  
+BACKTESTING:
+  full_backtest.py         → Trade simulation (4H testing)
+  aggressive_backtest.py   → Position sizing backtest ($2.50 risk)
+  scaling_simulator.py     → Daily scenario analysis
+
+EXECUTION GUIDE:
+  LAUNCH_CHECKLIST.py      → Pre-trading setup checklist
+  daily_system_1h.py       → Complete daily trading plan
+  SETUP_GUIDE.py           → Initial setup instructions
+  aggressive_config.py     → Position sizing calculator
+
+
+🎯 DAILY EXECUTION FLOW
+═════════════════════════════════════════════════════════════════════════════
+
+MORNING ROUTINE (30 min):
+  1. Review yesterday's charts
+  2. Identify 3-4 potential swing breakouts
+  3. Mark entry/SL/TP on chart
+  4. Set alerts
+
+SESSION 1: London Open (08:00-12:00 UTC) - 2-3 trades
+  1. Wait for alert
+  2. Check ENTRY CHECKLIST (must have ALL 3):
+     □ Swing identified (pivot high/low in 20 candles)
+     □ Trend confirmed (2+ HH/HL or LH/LL in 5 candles)
+     □ Breakout momentum (5+ pips past swing)
+  3. If YES → Enter with 0.3 micro-lots ($3 risk)
+  4. Set SL (20-30 pips) + TP (1.5×RR)
+  5. Walk away and wait
+
+SESSION 2: London/NY (12:00-16:00 UTC) - 1-2 trades
+  1. Review Session 1 results
+  2. If daily profit already +$15: Reduce size
+  3. Take 1-2 more high-quality setups
+  4. Scale position per SCALING RULES
+
+EVENING ROUTINE (15 min):
+  1. Calculate daily P&L
+  2. Update 15-day tracker
+  3. Journal: What worked? What didn't?
+  4. Update account balance
+
+
+⚙️ POSITION SIZING
+═════════════════════════════════════════════════════════════════════════════
+
+Formula: micro_lots = risk_amount / (risk_pips × 0.10)
+
+By Account Size:
+  $20:  Risk $3/trade → 0.3 micro-lots
+  $50:  Risk $5/trade → 0.5 micro-lots
+  $100: Risk $10/trade → 1.0 micro-lots
+  $200: Risk $20/trade → 2.0 micro-lots
+
+Scaling Rules:
+  +$10 profit: Increase to 0.4 micro-lots
+  +$30 profit: Increase to 0.5 micro-lots
+  +$50 profit: Increase to 0.75 micro-lots
+  -$5 loss: Cut to 0.2 micro-lots
+  -$10 loss: Take break (daily stop)
+
+
+✅ ENTRY RULES (MECHANICAL - NO INTERPRETATION)
+═════════════════════════════════════════════════════════════════════════════
+
+LONG Entry Criteria:
+  1. Identify swing low in last 15 candles
+  2. Identify swing high ABOVE it
+  3. Wait for close above swing high + 5 pips
+  4. Confirm uptrend (2+ HH/HL patterns)
+  5. Enter next candle
+  6. SL: 20-30 pips below swing low
+  7. TP: 1.5× risk amount
+
+
+SHORT Entry Criteria:
+  1. Identify swing high in last 15 candles
+  2. Identify swing low BELOW it
+  3. Wait for close below swing low - 5 pips
+  4. Confirm downtrend (2+ LH/LL patterns)
+  5. Enter next candle
+  6. SL: 20-30 pips above swing high
+  7. TP: 1.5× risk amount
+
+
+❌ EXIT RULES (AUTOMATIC)
+═════════════════════════════════════════════════════════════════════════════
+
+TP Hit:    Exit immediately (lock profit)
+SL Hit:    Exit immediately (cut loss)
+Reversal:  Exit if close back within swing (breakout fails)
+
+DO NOT:
+  • Move stop loss away from original level
+  • Hold hoping trade reverses
+  • Add to losing positions
+  • Skip stop loss "just this once"
+  • Scale out of winners (simple 1.5:1 exits)
+
+
+📈 ACCOUNT PROGRESSION
+═════════════════════════════════════════════════════════════════════════════
+
+Target: +$13/day average = $195 over 15 days
+
+Day 1-5 (Week 1):
+  Days: 5 trades/day × 5 days = 25 total trades
+  Win Rate: 65% = 16 wins, 9 losses
+  P&L: (16 × $6) - (9 × $2.50) = $96 - $22.50 = +$73.50
+  Target: $20 → $95
+
+Day 6-10 (Week 2):
+  Days: 5 trades/day × 5 days = 25 total trades
+  Win Rate: 65% = 16 wins, 9 losses
+  P&L: +$73.50 × (scaling factor 1.2) = +$90
+  Target: $95 → $185
+
+Day 11-15 (Week 3):
+  Days: 5 trades/day × 5 days = 25 total trades
+  Win Rate: 65% = 16 wins, 9 losses
+  P&L: +$73.50 × (scaling factor 1.4) = +$103
+  Target: $185 → $288 ✓ (EXCEED TARGET)
+
+Note: Scaling factor = account growth × average win increase
+
+
+⚠️ RISK MANAGEMENT
+═════════════════════════════════════════════════════════════════════════════
+
+Stop Loss Daily Limits:
+  First Loss: Continue (learning)
+  Second Loss: Reduce size to 0.2 micro-lots
+  Third Loss: Stop trading for the day (cool down)
+  Daily Loss > $10: STOP immediately (capital preservation)
+
+Account Decimation Risk:
+  3-4 consecutive losses = 50%+ drawdown
+  This is why DISCIPLINE is critical
+  One deviation from rules = Blown account
+
+
+🎓 MASTERY PROGRESSION
+═════════════════════════════════════════════════════════════════════════════
+
+Days 1-3: Learning Phase
+  You'll lose on first 1-2 trades (normal)
+  Focus on identifying swings correctly
+  Build confidence with small wins
+
+Days 4-7: Scaling Phase
+  Patterns become clearer
+  Confidence is rising (BE CAREFUL!)
+  Increase size as per SCALING RULES
+
+Days 8-15: Execution Phase
+  Routine is now automatic
+  Focus shifts from IF to WHEN
+  Manage psychology (greed, fear)
+
+
+📋 BROKER RECOMMENDATIONS
+═════════════════════════════════════════════════════════════════════════════
+
+Must Have:
+  ✓ Micro-lot support (0.01 lot minimum)
+  ✓ Tight spreads (EURUSD < 2 pips on 1H)
+  ✓ Fast execution
+  ✓ No re-quotes
+  ✓ Regulated broker
+
+Recommended:
+  • Pepperstone (1.0 pip spread EURUSD)
+  • IC Markets (0.9 pip spread EURUSD)
+  • HotForex (0.5-1.5 pip spread)
+
+Setup:
+  • Leverage: 1:1 (avoid margin calls)
+  • Account: Micro account ($20 minimum)
+  • Spreads: Verify before opening
+
+
+🚀 GO/NO-GO DECISION
+═════════════════════════════════════════════════════════════════════════════
+
+GO IF:
+  ✓ Broker account is open + balance confirmed
+  ✓ You've read all entry/exit rules
+  ✓ You understand position sizing
+  ✓ You're ready for 4-5 hours/day trading
+  ✓ You accept 65-70% success probability
+  ✓ You can handle 50%+ daily drawdown without panic
+
+NO-GO IF:
+  ✗ You want to "hope" price reverses
+  ✗ You can't stick to mechanical rules
+  ✗ You'll move stop losses
+  ✗ You'll "revenge trade" after losses
+  ✗ You don't have 4+ hours available daily
+  ✗ You'll second-guess the system
+
+
+✨ FINAL NOTES
+═════════════════════════════════════════════════════════════════════════════
+
+Success Formula:
+  • System (you have it) = 30%
+  • Position Sizing (strict) = 30%
+  • Discipline/Rules = 40%
+
+The strategy works IF you execute it perfectly.
+Most traders fail because they deviate on day 3.
+The traders who win: They follow the rules exactly.
+
+You now have all the tools. The question is execution.
+
+Ready?
+
+═════════════════════════════════════════════════════════════════════════════

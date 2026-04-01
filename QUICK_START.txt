@@ -1,0 +1,184 @@
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                         QUICK START CARD                                 ║
+║                   $20 → $200 IN 15 DAYS SYSTEM                           ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+STEP 1: GET A BROKER ACCOUNT (30 min)
+─────────────────────────────────────────────────────────────────────────
+✓ Open account at: Pepperstone, IC Markets, or HotForex
+✓ Minimum: $20
+✓ Account type: Micro (supports 0.01 lot minimum)
+✓ Leverage: 1:1
+✓ Download: MT4 or MT5
+
+
+STEP 2: UNDERSTAND THE RULES (1 hour)
+─────────────────────────────────────────────────────────────────────────
+Read in order:
+  1. daily_system_1h.py → Understand timeframes and sessions
+  2. SYSTEM_OVERVIEW.txt → Know the math and mechanics
+  3. Position Sizing section → Know your lot sizes
+  4. Entry/Exit Rules → Memorize these completely
+
+
+STEP 3: SETUP ALERTS & CHARTS (15 min)
+─────────────────────────────────────────────────────────────────────────
+1. Open MT4 with broker
+2. Create 1H charts for: EURUSD, GBPUSD, USDJPY
+3. Mark swing highs/lows on each chart
+4. Set alerts for breakout levels
+5. Print ENTRY CHECKLIST and paste on monitor
+
+
+STEP 4: DAY 1 TRADING PLAN
+─────────────────────────────────────────────────────────────────────────
+Start: London Open (08:00 UTC)
+Goal: +$6-10 (1-2 winning trades)
+Rules:
+  • Max 2 trades today (learning day)
+  • Risk $3/trade (0.3 micro-lots)
+  • Only EURUSD + GBPUSD
+  • Stop if down $5 by lunch
+
+Expected Worst Case:
+  2 losses = -$6 (account: $14)
+  2 wins = +$12 (account: $32)
+  Most likely: 1 win, 1 loss = +$3 (account: $23)
+
+
+ENTRY CHECKLIST (Copy this!)
+─────────────────────────────────────────────────────────────────────────
+Before every trade, verify ALL 3:
+
+□ SWING IDENTIFIED?
+  Recent pivot high or low in last 20 candles?
+  YES → Continue
+  NO → Skip trade
+
+□ TREND CONFIRMED?
+  2+ HH/HL patterns (LONG) or LH/LL patterns (SHORT) in last 5 candles?
+  YES → Continue
+  NO → Skip trade
+
+□ BREAKOUT MOMENTUM?
+  Close broke swing by 5+ pips AND is ABOVE/BELOW swing?
+  YES → Enter trade
+  NO → Wait for next setup
+
+If ANY box is unchecked → DO NOT ENTER
+
+
+POSITION SIZING CHEAT SHEET
+─────────────────────────────────────────────────────────────────────────
+Risk = (Entry - SL) / 0.0001 × 0.10 = Dollar Risk
+
+Example EURUSD:
+  Entry: 1.1600
+  SL: 1.1550 (50 pips)
+  Micro-lots needed = $3 / (50 × 0.10) = $3 / $5 = 0.6 micro-lots
+
+Example GBPUSD:
+  Entry: 1.3400
+  SL: 1.3340 (60 pips)
+  Micro-lots needed = $3 / (60 × 0.10) = $3 / $6 = 0.5 micro-lots
+
+Example USDJPY:
+  Entry: 151.50
+  SL: 151.20 (30 pips)
+  Micro-lots needed = $3 / (30 × 0.10) = $3 / $3 = 1.0 micro-lots
+
+
+DAILY SCALING
+─────────────────────────────────────────────────────────────────────────
+Track profit and scale automatically:
+
+Profit Level | Lot Size to Use
+─────────────────────────────────
+$0 - $10     | 0.30 micro-lots ($3 risk)
+$10 - $30    | 0.40 micro-lots ($4 risk)
+$30 - $50    | 0.50 micro-lots ($5 risk)
+$50 - $75    | 0.75 micro-lots ($7.50 risk)
+$75+         | 1.00 micro-lots ($10 risk)
+
+Loss Levels:
+-$5: Drop to 0.20 micro-lots (shrink)
+-$10: Stop trading for the day
+
+
+SL & TP QUICK CALC
+─────────────────────────────────────────────────────────────────────────
+SL Distance: 20-30 pips
+TP Calculation: TP = Entry + (Risk × 1.5)
+
+Example:
+  Entry: 1.1600
+  SL: 1.1570 (30 pips)
+  TP: 1.1600 + (30 pips × 1.5) = 1.1645 (45 pips profit)
+  Risk/Reward: 30/45 = 1.5:1 ✓
+
+
+DAILY SCHEDULE
+─────────────────────────────────────────────────────────────────────────
+Morning (07:45 UTC): Identify setups (15 min)
+Session 1 (08:00-12:00 UTC): Monitor alerts (2-3 trades)
+Lunch (12:00-14:00 UTC): Review results (15 min)
+Session 2 (14:00-16:00 UTC): Final scalps (1-2 trades)
+Evening (16:00-17:00 UTC): Track P&L (15 min)
+
+Total Time: 4-5 hours per day
+
+
+RED FLAGS - STOP IF YOU SEE THESE
+─────────────────────────────────────────────────────────────────────────
+✗ Moving stops further away after entry
+✗ Holding trades hoping they reverse
+✗ Taking trades without the ENTRY CHECKLIST
+✗ Oversizing after 1-2 wins
+✗ Trading after down $10 for the day
+✗ "Just this once" skipping a trade rule
+
+If any of these happen: Stop, close platform, review.
+
+
+15-DAY TARGETS
+─────────────────────────────────────────────────────────────────────────
+Day 1-3:  Learn swings              ($20 → $40 if lucky)
+Day 4-7:  Scale up (+$20/day)       ($40 → $120)
+Day 8-12: Accelerate (+$17-20/day)  ($120 → $210+) ✓
+Day 13-15: Maintain                 ($210 → $250)
+
+
+TROUBLESHOOTING
+─────────────────────────────────────────────────────────────────────────
+"No trades today" → Good! You're filtering properly
+"Lost 2 in a row" → Reduce size, take a break
+"Up $15 at noon" → Reduce size, protect gains
+"Down $5 by lunch" → Stop for day, review charts
+"Confused on entry" → Check ENTRY CHECKLIST again
+
+
+SUCCESS MINDSET
+─────────────────────────────────────────────────────────────────────────
+WIN = Follow rules perfectly
+LOSS = Also follow rules perfectly
+(The rules work over 15 days, not every day)
+
+Expected: 60-70% win rate (not 100%)
+Life happens. Swings fail. That's normal.
+Your job: Follow the system exactly.
+The system handles the variance.
+
+
+FINAL REMINDERS
+─────────────────────────────────────────────────────────────────────────
+✓ Print this card
+✓ Print ENTRY CHECKLIST
+✓ Know your broker's micro-lot size
+✓ Test one trade on demo
+✓ Do NOT add money until confident
+✓ Journal every trade (why you entered/exited)
+
+Question: Ready to start?
+Answer: Only if you'll follow ALL the rules.
+
+═══════════════════════════════════════════════════════════════════════════

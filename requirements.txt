@@ -1,0 +1,10 @@
+pandas>=1.5.0
+numpy>=1.24.0
+matplotlib>=3.5.0
+scipy>=1.10.0
+yfinance>=0.2.0
+requests>=2.28.0
+# MetaTrader5 is optional - only needed for live trading on Windows
+# For Linux/Codespaces, use yfinance instead
+# Uncomment below if you have MT5 on Windows:
+# MetaTrader5>=5.0.0
